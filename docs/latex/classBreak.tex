@@ -1,0 +1,94 @@
+\doxysection{Break Class Reference}
+\hypertarget{classBreak}{}\label{classBreak}\index{Break@{Break}}
+
+
+{\ttfamily \#include $<$Break.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBreak_a9886b16cc47010af5dd666cebbf443cc}{Break}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classBreak}{Break} object and records the current system time as the start time. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classBreak_a0c5606b1472f7298e6fce675f023fd15}{get\+Start\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the formatted start time of the break. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classBreak_a4be2949ced455fd045c5da943a4f291e}{get\+End\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the formatted end time of the break. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBreak_ad727f352b043f1ad91ab1cecfb2005ac}{end\+Break}} ()
+\begin{DoxyCompactList}\small\item\em Ends the break and records the current system time as the end time. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classBreak_ac5763d947fc585fdc2a7c2a64090f9d8}{get\+Duration}} () const
+\begin{DoxyCompactList}\small\item\em Calculates and retrieves the duration of the break in HH\+:\+MM\+:SS format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classBreak_a9886b16cc47010af5dd666cebbf443cc}\label{classBreak_a9886b16cc47010af5dd666cebbf443cc} 
+\index{Break@{Break}!Break@{Break}}
+\index{Break@{Break}!Break@{Break}}
+\doxysubsubsection{\texorpdfstring{Break()}{Break()}}
+{\footnotesize\ttfamily Break\+::\+Break (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classBreak}{Break} object and records the current system time as the start time. 
+
+The constructor initializes a break session for a student and automatically timestamps the start of the break using system time. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBreak_ad727f352b043f1ad91ab1cecfb2005ac}\label{classBreak_ad727f352b043f1ad91ab1cecfb2005ac} 
+\index{Break@{Break}!endBreak@{endBreak}}
+\index{endBreak@{endBreak}!Break@{Break}}
+\doxysubsubsection{\texorpdfstring{endBreak()}{endBreak()}}
+{\footnotesize\ttfamily void Break\+::end\+Break (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ends the break and records the current system time as the end time. 
+
+This function should be called when a student returns from a break. \Hypertarget{classBreak_ac5763d947fc585fdc2a7c2a64090f9d8}\label{classBreak_ac5763d947fc585fdc2a7c2a64090f9d8} 
+\index{Break@{Break}!getDuration@{getDuration}}
+\index{getDuration@{getDuration}!Break@{Break}}
+\doxysubsubsection{\texorpdfstring{getDuration()}{getDuration()}}
+{\footnotesize\ttfamily std\+::string Break\+::get\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calculates and retrieves the duration of the break in HH\+:\+MM\+:SS format. 
+
+If the break has not yet ended, the function returns "{}\+Break in progress"{}.
+
+\begin{DoxyReturn}{Returns}
+A string representing the duration of the break. 
+\end{DoxyReturn}
+\Hypertarget{classBreak_a4be2949ced455fd045c5da943a4f291e}\label{classBreak_a4be2949ced455fd045c5da943a4f291e} 
+\index{Break@{Break}!getEndTime@{getEndTime}}
+\index{getEndTime@{getEndTime}!Break@{Break}}
+\doxysubsubsection{\texorpdfstring{getEndTime()}{getEndTime()}}
+{\footnotesize\ttfamily std\+::string Break\+::get\+End\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the formatted end time of the break. 
+
+If the break has not yet ended, the function returns "{}\+Break in progress"{}.
+
+\begin{DoxyReturn}{Returns}
+A string representing the break end time in HH\+:\+MM\+:SS format, or "{}\+Break in progress"{} if the break has not ended. 
+\end{DoxyReturn}
+\Hypertarget{classBreak_a0c5606b1472f7298e6fce675f023fd15}\label{classBreak_a0c5606b1472f7298e6fce675f023fd15} 
+\index{Break@{Break}!getStartTime@{getStartTime}}
+\index{getStartTime@{getStartTime}!Break@{Break}}
+\doxysubsubsection{\texorpdfstring{getStartTime()}{getStartTime()}}
+{\footnotesize\ttfamily std\+::string Break\+::get\+Start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the formatted start time of the break. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the break start time in HH\+:\+MM\+:SS format. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Break_8h}{Break.\+h}}\item 
+src/\mbox{\hyperlink{Break_8cpp}{Break.\+cpp}}\end{DoxyCompactItemize}

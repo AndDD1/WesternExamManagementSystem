@@ -1,0 +1,65 @@
+\doxysection{PDFReport\+Generator Class Reference}
+\hypertarget{classPDFReportGenerator}{}\label{classPDFReportGenerator}\index{PDFReportGenerator@{PDFReportGenerator}}
+
+
+Utility class for generating a PDF report of an exam session.  
+
+
+
+
+{\ttfamily \#include $<$PDFReport\+Generator.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classPDFReportGenerator_a07e5c26106072eb7064fa9b3c74f2d62}{generate}} (const std\+::string \&file\+Name, const std\+::string \&course\+Num, const std\+::string \&term\+Num, const std\+::string \&term\+Name, const std\+::string \&room, const std\+::string \&start\+Time\+Str, const std\+::string \&end\+Time\+Str, const std\+::vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&students, const std\+::vector$<$ \mbox{\hyperlink{classProctor}{Proctor}} $>$ \&proctors, const std\+::vector$<$ std\+::string $>$ \&incident\+Report)
+\begin{DoxyCompactList}\small\item\em Generates a PDF report for the exam session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class for generating a PDF report of an exam session. 
+
+This class uses the libharu library to generate a well-\/formatted PDF file containing information about students, proctors, exam timing, seating, attendance, and incidents. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPDFReportGenerator_a07e5c26106072eb7064fa9b3c74f2d62}\label{classPDFReportGenerator_a07e5c26106072eb7064fa9b3c74f2d62} 
+\index{PDFReportGenerator@{PDFReportGenerator}!generate@{generate}}
+\index{generate@{generate}!PDFReportGenerator@{PDFReportGenerator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily void PDFReport\+Generator\+::generate (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{const std\+::string \&}]{course\+Num,  }\item[{const std\+::string \&}]{term\+Num,  }\item[{const std\+::string \&}]{term\+Name,  }\item[{const std\+::string \&}]{room,  }\item[{const std\+::string \&}]{start\+Time\+Str,  }\item[{const std\+::string \&}]{end\+Time\+Str,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \&}]{students,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{classProctor}{Proctor}} $>$ \&}]{proctors,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{incident\+Report }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Generates a PDF report for the exam session. 
+
+This static method writes a structured PDF report summarizing exam details including student attendance, seating assignments, version distribution, submission statuses, and any reported incidents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name (with path) of the output PDF file. \\
+\hline
+{\em course\+Num} & The course number (e.\+g., "{}3307"{}). \\
+\hline
+{\em term\+Num} & The term number or identifier (e.\+g., "{}1229"{}). \\
+\hline
+{\em term\+Name} & The name of the academic term (e.\+g., "{}\+Winter 25"{}). \\
+\hline
+{\em room} & The exam room identifier (e.\+g., "{}\+AH-\/\+STAGE"{}). \\
+\hline
+{\em start\+Time\+Str} & The start time of the exam in string format (e.\+g., "{}13\+:30"{}). \\
+\hline
+{\em end\+Time\+Str} & The end time of the exam in string format (e.\+g., "{}16\+:30"{}). \\
+\hline
+{\em students} & A list of \doxylink{classStudent}{Student} objects participating in the exam. \\
+\hline
+{\em proctors} & A list of \doxylink{classProctor}{Proctor} objects managing the exam session. \\
+\hline
+{\em incident\+Report} & A list of incident descriptions recorded during the exam. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{PDFReportGenerator_8h}{PDFReport\+Generator.\+h}}\item 
+src/\mbox{\hyperlink{PDFReportGenerator_8cpp}{PDFReport\+Generator.\+cpp}}\end{DoxyCompactItemize}

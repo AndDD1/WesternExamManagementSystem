@@ -1,0 +1,50 @@
+\doxysection{Exam\+Data\+Loader Class Reference}
+\hypertarget{classExamDataLoader}{}\label{classExamDataLoader}\index{ExamDataLoader@{ExamDataLoader}}
+
+
+Utility class for loading exam data from a structured text file into an \doxylink{classExam}{Exam} instance.  
+
+
+
+
+{\ttfamily \#include $<$Exam\+Data\+Loader.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classExamDataLoader_ad91e30deedebfd7cb416973d6239ff5d}{load\+Exam\+Data}} (const std\+::string \&path, \mbox{\hyperlink{classExam}{Exam}} \&exam)
+\begin{DoxyCompactList}\small\item\em Loads exam data from a file and populates an \doxylink{classExam}{Exam} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class for loading exam data from a structured text file into an \doxylink{classExam}{Exam} instance. 
+
+This class provides a static method that parses exam details, proctor info, and student info from a given file and populates the corresponding fields in the \doxylink{classExam}{Exam} object. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classExamDataLoader_ad91e30deedebfd7cb416973d6239ff5d}\label{classExamDataLoader_ad91e30deedebfd7cb416973d6239ff5d} 
+\index{ExamDataLoader@{ExamDataLoader}!loadExamData@{loadExamData}}
+\index{loadExamData@{loadExamData}!ExamDataLoader@{ExamDataLoader}}
+\doxysubsubsection{\texorpdfstring{loadExamData()}{loadExamData()}}
+{\footnotesize\ttfamily bool Exam\+Data\+Loader\+::load\+Exam\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{\mbox{\hyperlink{classExam}{Exam}} \&}]{exam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads exam data from a file and populates an \doxylink{classExam}{Exam} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path to the exam data file. \\
+\hline
+{\em exam} & The \doxylink{classExam}{Exam} object to populate with the loaded data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the data was loaded successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ExamDataLoader_8h}{Exam\+Data\+Loader.\+h}}\item 
+src/\mbox{\hyperlink{ExamDataLoader_8cpp}{Exam\+Data\+Loader.\+cpp}}\end{DoxyCompactItemize}

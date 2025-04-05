@@ -1,0 +1,101 @@
+\doxysection{Incident\+Dialog Class Reference}
+\hypertarget{classIncidentDialog}{}\label{classIncidentDialog}\index{IncidentDialog@{IncidentDialog}}
+
+
+A dialog used to record an incident during an exam session.  
+
+
+
+
+{\ttfamily \#include $<$Incident\+Dialog.\+h$>$}
+
+
+
+Inheritance diagram for Incident\+Dialog\+:
+% FIG 0
+
+
+Collaboration diagram for Incident\+Dialog\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIncidentDialog_a4fc2dedfa9c333286d960afb944d8870}{Incident\+Dialog}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classIncidentDialog}{Incident\+Dialog}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIncidentDialog_a111931d05595f81da1afe06b8b8c7056}{get\+Student\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the entered student ID. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIncidentDialog_a0f6ebab08c948ab3a65907f625c31547}{get\+Proctor\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the entered proctor ID. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{classIncidentDialog_a7c1b8a108669dce40700021ef8dfd59c}{get\+Message}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the incident message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A dialog used to record an incident during an exam session. 
+
+This dialog allows a TA or Course Instructor to enter and submit information about an incident, including the student ID, proctor ID, and a descriptive message. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classIncidentDialog_a4fc2dedfa9c333286d960afb944d8870}\label{classIncidentDialog_a4fc2dedfa9c333286d960afb944d8870} 
+\index{IncidentDialog@{IncidentDialog}!IncidentDialog@{IncidentDialog}}
+\index{IncidentDialog@{IncidentDialog}!IncidentDialog@{IncidentDialog}}
+\doxysubsubsection{\texorpdfstring{IncidentDialog()}{IncidentDialog()}}
+{\footnotesize\ttfamily Incident\+Dialog\+::\+Incident\+Dialog (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{classIncidentDialog}{Incident\+Dialog}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget, default is nullptr. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIncidentDialog_a7c1b8a108669dce40700021ef8dfd59c}\label{classIncidentDialog_a7c1b8a108669dce40700021ef8dfd59c} 
+\index{IncidentDialog@{IncidentDialog}!getMessage@{getMessage}}
+\index{getMessage@{getMessage}!IncidentDialog@{IncidentDialog}}
+\doxysubsubsection{\texorpdfstring{getMessage()}{getMessage()}}
+{\footnotesize\ttfamily QString Incident\+Dialog\+::get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the incident message. 
+
+\begin{DoxyReturn}{Returns}
+The message as a QString. 
+\end{DoxyReturn}
+\Hypertarget{classIncidentDialog_a0f6ebab08c948ab3a65907f625c31547}\label{classIncidentDialog_a0f6ebab08c948ab3a65907f625c31547} 
+\index{IncidentDialog@{IncidentDialog}!getProctorID@{getProctorID}}
+\index{getProctorID@{getProctorID}!IncidentDialog@{IncidentDialog}}
+\doxysubsubsection{\texorpdfstring{getProctorID()}{getProctorID()}}
+{\footnotesize\ttfamily int Incident\+Dialog\+::get\+Proctor\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the entered proctor ID. 
+
+\begin{DoxyReturn}{Returns}
+The proctor ID as an integer. 
+\end{DoxyReturn}
+\Hypertarget{classIncidentDialog_a111931d05595f81da1afe06b8b8c7056}\label{classIncidentDialog_a111931d05595f81da1afe06b8b8c7056} 
+\index{IncidentDialog@{IncidentDialog}!getStudentID@{getStudentID}}
+\index{getStudentID@{getStudentID}!IncidentDialog@{IncidentDialog}}
+\doxysubsubsection{\texorpdfstring{getStudentID()}{getStudentID()}}
+{\footnotesize\ttfamily int Incident\+Dialog\+::get\+Student\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the entered student ID. 
+
+\begin{DoxyReturn}{Returns}
+The student ID as an integer. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/ui\+\_\+header/\mbox{\hyperlink{IncidentDialog_8h}{Incident\+Dialog.\+h}}\item 
+src/ui\+\_\+src/\mbox{\hyperlink{IncidentDialog_8cpp}{Incident\+Dialog.\+cpp}}\end{DoxyCompactItemize}

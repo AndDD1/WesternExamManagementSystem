@@ -1,0 +1,45 @@
+\doxysection{Check\+In\+Dialog.\+h}
+\hypertarget{CheckInDialog_8h_source}{}\label{CheckInDialog_8h_source}\index{include/ui\_header/CheckInDialog.h@{include/ui\_header/CheckInDialog.h}}
+\mbox{\hyperlink{CheckInDialog_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Exam_8h}{Exam.h}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCheckInDialog}{CheckInDialog}}\ :\ \textcolor{keyword}{public}\ QDialog\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classCheckInDialog}{CheckInDialog}}(\mbox{\hyperlink{classExam}{Exam}}*\ exam,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ onLookupStudent();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ onConfirmCheckIn();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{classExam}{Exam}}*\ examPtr;}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classStudent}{Student}}*\ currentStudent;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ QLineEdit*\ idInput;}
+\DoxyCodeLine{00042\ \ \ \ \ QLabel*\ nameLabel;}
+\DoxyCodeLine{00043\ \ \ \ \ QLabel*\ dobLabel;}
+\DoxyCodeLine{00044\ \ \ \ \ QLabel*\ seatLabel;}
+\DoxyCodeLine{00045\ \ \ \ \ QLabel*\ versionLabel;}
+\DoxyCodeLine{00046\ \ \ \ \ QLabel*\ photoLabel;}
+\DoxyCodeLine{00047\ \ \ \ \ QLabel*\ statusLabel;}
+\DoxyCodeLine{00048\ \ \ \ \ QLabel*\ photoUrlLabel;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ QPushButton*\ confirmButton;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ updateStudentInfo(\mbox{\hyperlink{classStudent}{Student}}*\ student);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ loadLocalPhoto(\textcolor{keyword}{const}\ QString\&\ path);}
+\DoxyCodeLine{00055\ \};}
+
+\end{DoxyCode}

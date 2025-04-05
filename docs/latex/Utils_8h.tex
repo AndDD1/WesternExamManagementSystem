@@ -1,0 +1,118 @@
+\doxysection{include/\+Utils.h File Reference}
+\hypertarget{Utils_8h}{}\label{Utils_8h}\index{include/Utils.h@{include/Utils.h}}
+
+
+Utility functions for the Project.  
+
+
+{\ttfamily \#include $<$QString$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$QDate\+Time$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for Utils.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{Utils_8h_ad0e15662de7af076789a3685545c7430}{time\+Point\+To\+String}} (const std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \&tp)
+\begin{DoxyCompactList}\small\item\em Converts a std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point to a formatted std\+::string. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{Utils_8h_a8a62b91d0c62a9e80bf96f33fc02220c}{time\+Point\+To\+QString}} (const std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \&tp)
+\begin{DoxyCompactList}\small\item\em Converts a std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point to a formatted QString. \end{DoxyCompactList}\item 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{Utils_8h_a30c120059f570dedd26178a620a8ac4e}{string\+To\+Time\+Point}} (const std\+::string \&iso\+String)
+\begin{DoxyCompactList}\small\item\em Converts a ISO 8601 formatted string ti std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{Utils_8h_a1a32c4d3bd87256731e67936766c65ca}{trim}} (const std\+::string \&s)
+\item 
+std\+::string \mbox{\hyperlink{Utils_8h_a2c5f980546ab3ff3f2b93ddb7d1c6a5f}{get\+Value}} (const std\+::string \&line)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility functions for the Project. 
+
+\begin{DoxyAuthor}{Author}
+Allen Pan 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/03-\/29 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Utils_8h_a2c5f980546ab3ff3f2b93ddb7d1c6a5f}\label{Utils_8h_a2c5f980546ab3ff3f2b93ddb7d1c6a5f} 
+\index{Utils.h@{Utils.h}!getValue@{getValue}}
+\index{getValue@{getValue}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily std\+::string get\+Value (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{Utils_8h_a30c120059f570dedd26178a620a8ac4e}\label{Utils_8h_a30c120059f570dedd26178a620a8ac4e} 
+\index{Utils.h@{Utils.h}!stringToTimePoint@{stringToTimePoint}}
+\index{stringToTimePoint@{stringToTimePoint}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{stringToTimePoint()}{stringToTimePoint()}}
+{\footnotesize\ttfamily std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point string\+To\+Time\+Point (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{iso\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Converts a ISO 8601 formatted string ti std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point. 
+
+The format used is "{}yyyy-\/\+MM-\/dd hh\+:mm\+:ss"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iso\+String} & String address to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point. 
+\end{DoxyReturn}
+\Hypertarget{Utils_8h_a8a62b91d0c62a9e80bf96f33fc02220c}\label{Utils_8h_a8a62b91d0c62a9e80bf96f33fc02220c} 
+\index{Utils.h@{Utils.h}!timePointToQString@{timePointToQString}}
+\index{timePointToQString@{timePointToQString}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{timePointToQString()}{timePointToQString()}}
+{\footnotesize\ttfamily QString time\+Point\+To\+QString (\begin{DoxyParamCaption}\item[{const std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \&}]{tp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Converts a std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point to a formatted QString. 
+
+The format used is "{}yyyy-\/\+MM-\/dd hh\+:mm\+:ss"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tp} & The time point to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A QString representing the time point. 
+\end{DoxyReturn}
+\Hypertarget{Utils_8h_ad0e15662de7af076789a3685545c7430}\label{Utils_8h_ad0e15662de7af076789a3685545c7430} 
+\index{Utils.h@{Utils.h}!timePointToString@{timePointToString}}
+\index{timePointToString@{timePointToString}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{timePointToString()}{timePointToString()}}
+{\footnotesize\ttfamily std\+::string time\+Point\+To\+String (\begin{DoxyParamCaption}\item[{const std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \&}]{tp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Converts a std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point to a formatted std\+::string. 
+
+The format used is "{}\+YYYY-\/\+MM-\/\+DD HH\+:\+MM\+:\+SS"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tp} & The time point to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A formatted string representing the time point. 
+\end{DoxyReturn}
+\Hypertarget{Utils_8h_a1a32c4d3bd87256731e67936766c65ca}\label{Utils_8h_a1a32c4d3bd87256731e67936766c65ca} 
+\index{Utils.h@{Utils.h}!trim@{trim}}
+\index{trim@{trim}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily std\+::string trim (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

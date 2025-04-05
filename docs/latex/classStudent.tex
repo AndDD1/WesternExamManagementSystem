@@ -1,0 +1,256 @@
+\doxysection{Student Class Reference}
+\hypertarget{classStudent}{}\label{classStudent}\index{Student@{Student}}
+
+
+{\ttfamily \#include $<$Student.\+h$>$}
+
+
+
+Inheritance diagram for Student\+:
+% FIG 0
+
+
+Collaboration diagram for Student\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStudent_a2e967f352e28ebb484960c721fcc5483}{Student}} (int ID, const std\+::string \&name, const std\+::string \&DOB, const std\+::string \&pic\+\_\+\+URL, bool is\+Attend=false, bool is\+Submit=false)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classStudent}{Student} object with the specified attributes. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classStudent_a61845e58c3054b0bd09d554f2acf78c6}{get\+Seat\+Num}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the student\textquotesingle{}s seat number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStudent_a9672f1788e8477b2014888000b4fbba2}{set\+Seat\+Num}} (const std\+::string \&seat)
+\begin{DoxyCompactList}\small\item\em Sets the seat number for the student. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStudent_ab684f4da73e4f12cd13b3f59ce46f93d}{get\+Exam\+Version}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the student\textquotesingle{}s assigned exam version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStudent_ab3d9f9b857cc60ef7cfcaecb3e5cad63}{set\+Exam\+Version}} (int version)
+\begin{DoxyCompactList}\small\item\em Sets the exam version for the student. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStudent_a32d098f5871c78c5c26e5ba8c78fb872}{get\+Attendance}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the student\textquotesingle{}s attendance status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStudent_aa9c9bf0da7802d4f493789983a59c9d2}{set\+Attendance}} (bool status)
+\begin{DoxyCompactList}\small\item\em Sets the student\textquotesingle{}s attendance status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStudent_aef9bb0f48898e480c4ba5fee2d5e2523}{leave\+For\+Break}} ()
+\begin{DoxyCompactList}\small\item\em Records the start of a washroom break. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStudent_ad45a9a39934d282a2b00fd3bf3025407}{return\+From\+Break}} ()
+\begin{DoxyCompactList}\small\item\em Ends the last recorded break. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classBreak}{Break}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classStudent_a1cb9b4b29f4a9f20755da62d25febc80}{get\+Breaks\+List}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the list of breaks taken by the student. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStudent_abb758db2fa40be23ce3e3ae72a097eee}{submit\+Exam}} ()
+\begin{DoxyCompactList}\small\item\em Submits the exam for the student. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStudent_ab80ebd47c9c38190df98bf4d8d993649}{get\+Submission\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the student\textquotesingle{}s exam submission status. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classStudent_a5f4817dd5e1c7323352f078e3a0c5610}{get\+Submission\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the student\textquotesingle{}s exam submission time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classUser}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUser_afc52455f5d70b69df489d0f3f1f43a6c}{User}} (int ID, const std\+::string \&name, const std\+::string \&DOB, const std\+::string \&pic\+\_\+\+URL)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classUser}{User} object with the specified attributes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUser_a986c6f30aeac167bb5d311dd412cf604}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the user\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a95feef2641a3141ef514a0bd52c3aaa2}{set\+ID}} (int ID)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUser_a446a64e63adafbc2e1428532275ad6a1}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_abe087f191699f9d61bdc94d041e4fada}{set\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUser_a82231a1d7a800dcffe2b50d5196ede10}{get\+DOB}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the user\textquotesingle{}s date of birth. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_acefa722d7234e30eb3bb11cae967ee5b}{set\+DOB}} (const std\+::string \&DOB)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s date of birth. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUser_a11d123ac49dd05211031447557ec7a42}{get\+Pic\+URL}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the user\textquotesingle{}s profile picture URL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a6f8a5dc50521de73d57ca34631541de9}{set\+Pic\+URL}} (const std\+::string \&pic\+\_\+\+URL)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s profile picture URL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classStudent_a2e967f352e28ebb484960c721fcc5483}\label{classStudent_a2e967f352e28ebb484960c721fcc5483} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{DOB,  }\item[{const std\+::string \&}]{pic\+\_\+\+URL,  }\item[{bool}]{is\+Attend = {\ttfamily false},  }\item[{bool}]{is\+Submit = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classStudent}{Student} object with the specified attributes. 
+
+This constructor initializes a \doxylink{classStudent}{Student} object by calling the base class \doxylink{classUser}{User} constructor and setting the student\textquotesingle{}s attendance status, submission status, and initializing exam version.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & The unique identifier of the student. \\
+\hline
+{\em name} & The name of the student. \\
+\hline
+{\em DOB} & The date of birth of the student. \\
+\hline
+{\em pic\+\_\+\+URL} & The URL of the student\textquotesingle{}s profile picture. \\
+\hline
+{\em is\+Attend} & A boolean indicating whether the student is present. \\
+\hline
+{\em is\+Submit} & A boolean indicating whether the student has submitted the exam. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classStudent_a32d098f5871c78c5c26e5ba8c78fb872}\label{classStudent_a32d098f5871c78c5c26e5ba8c78fb872} 
+\index{Student@{Student}!getAttendance@{getAttendance}}
+\index{getAttendance@{getAttendance}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getAttendance()}{getAttendance()}}
+{\footnotesize\ttfamily bool Student\+::get\+Attendance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the student\textquotesingle{}s attendance status. 
+
+\begin{DoxyReturn}{Returns}
+A boolean indicating whether the student is present. 
+\end{DoxyReturn}
+\Hypertarget{classStudent_a1cb9b4b29f4a9f20755da62d25febc80}\label{classStudent_a1cb9b4b29f4a9f20755da62d25febc80} 
+\index{Student@{Student}!getBreaksList@{getBreaksList}}
+\index{getBreaksList@{getBreaksList}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getBreaksList()}{getBreaksList()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classBreak}{Break}} $>$ \texorpdfstring{$\ast$}{*} Student\+::get\+Breaks\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the list of breaks taken by the student. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to a vector containing the student\textquotesingle{}s break records. 
+\end{DoxyReturn}
+\Hypertarget{classStudent_ab684f4da73e4f12cd13b3f59ce46f93d}\label{classStudent_ab684f4da73e4f12cd13b3f59ce46f93d} 
+\index{Student@{Student}!getExamVersion@{getExamVersion}}
+\index{getExamVersion@{getExamVersion}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getExamVersion()}{getExamVersion()}}
+{\footnotesize\ttfamily int Student\+::get\+Exam\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the student\textquotesingle{}s assigned exam version. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the exam version assigned to the student. 
+\end{DoxyReturn}
+\Hypertarget{classStudent_a61845e58c3054b0bd09d554f2acf78c6}\label{classStudent_a61845e58c3054b0bd09d554f2acf78c6} 
+\index{Student@{Student}!getSeatNum@{getSeatNum}}
+\index{getSeatNum@{getSeatNum}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getSeatNum()}{getSeatNum()}}
+{\footnotesize\ttfamily std\+::string Student\+::get\+Seat\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the student\textquotesingle{}s seat number. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the seat number of the student. 
+\end{DoxyReturn}
+\Hypertarget{classStudent_ab80ebd47c9c38190df98bf4d8d993649}\label{classStudent_ab80ebd47c9c38190df98bf4d8d993649} 
+\index{Student@{Student}!getSubmissionStatus@{getSubmissionStatus}}
+\index{getSubmissionStatus@{getSubmissionStatus}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getSubmissionStatus()}{getSubmissionStatus()}}
+{\footnotesize\ttfamily bool Student\+::get\+Submission\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the student\textquotesingle{}s exam submission status. 
+
+\begin{DoxyReturn}{Returns}
+A boolean indicating whether the student has submitted the exam. 
+\end{DoxyReturn}
+\Hypertarget{classStudent_a5f4817dd5e1c7323352f078e3a0c5610}\label{classStudent_a5f4817dd5e1c7323352f078e3a0c5610} 
+\index{Student@{Student}!getSubmissionTime@{getSubmissionTime}}
+\index{getSubmissionTime@{getSubmissionTime}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getSubmissionTime()}{getSubmissionTime()}}
+{\footnotesize\ttfamily std\+::string Student\+::get\+Submission\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the student\textquotesingle{}s exam submission time. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the submission time. 
+\end{DoxyReturn}
+\Hypertarget{classStudent_aef9bb0f48898e480c4ba5fee2d5e2523}\label{classStudent_aef9bb0f48898e480c4ba5fee2d5e2523} 
+\index{Student@{Student}!leaveForBreak@{leaveForBreak}}
+\index{leaveForBreak@{leaveForBreak}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{leaveForBreak()}{leaveForBreak()}}
+{\footnotesize\ttfamily void Student\+::leave\+For\+Break (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Records the start of a washroom break. 
+
+This function creates a new \doxylink{classBreak}{Break} object and adds it to the student\textquotesingle{}s break records. The \doxylink{classBreak}{Break} object automatically records the current system time as the start time. \Hypertarget{classStudent_ad45a9a39934d282a2b00fd3bf3025407}\label{classStudent_ad45a9a39934d282a2b00fd3bf3025407} 
+\index{Student@{Student}!returnFromBreak@{returnFromBreak}}
+\index{returnFromBreak@{returnFromBreak}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{returnFromBreak()}{returnFromBreak()}}
+{\footnotesize\ttfamily void Student\+::return\+From\+Break (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ends the last recorded break. 
+
+This function sets the end time of the last recorded break. If there are no recorded breaks, this function does nothing. \Hypertarget{classStudent_aa9c9bf0da7802d4f493789983a59c9d2}\label{classStudent_aa9c9bf0da7802d4f493789983a59c9d2} 
+\index{Student@{Student}!setAttendance@{setAttendance}}
+\index{setAttendance@{setAttendance}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setAttendance()}{setAttendance()}}
+{\footnotesize\ttfamily void Student\+::set\+Attendance (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})}
+
+
+
+Sets the student\textquotesingle{}s attendance status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & A boolean indicating the attendance status of the student. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classStudent_ab3d9f9b857cc60ef7cfcaecb3e5cad63}\label{classStudent_ab3d9f9b857cc60ef7cfcaecb3e5cad63} 
+\index{Student@{Student}!setExamVersion@{setExamVersion}}
+\index{setExamVersion@{setExamVersion}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setExamVersion()}{setExamVersion()}}
+{\footnotesize\ttfamily void Student\+::set\+Exam\+Version (\begin{DoxyParamCaption}\item[{int}]{version }\end{DoxyParamCaption})}
+
+
+
+Sets the exam version for the student. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & The exam version number to assign. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classStudent_a9672f1788e8477b2014888000b4fbba2}\label{classStudent_a9672f1788e8477b2014888000b4fbba2} 
+\index{Student@{Student}!setSeatNum@{setSeatNum}}
+\index{setSeatNum@{setSeatNum}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setSeatNum()}{setSeatNum()}}
+{\footnotesize\ttfamily void Student\+::set\+Seat\+Num (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{seat }\end{DoxyParamCaption})}
+
+
+
+Sets the seat number for the student. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seat} & The seat number to assign to the student. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classStudent_abb758db2fa40be23ce3e3ae72a097eee}\label{classStudent_abb758db2fa40be23ce3e3ae72a097eee} 
+\index{Student@{Student}!submitExam@{submitExam}}
+\index{submitExam@{submitExam}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{submitExam()}{submitExam()}}
+{\footnotesize\ttfamily void Student\+::submit\+Exam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submits the exam for the student. 
+
+This function marks the student\textquotesingle{}s exam as submitted if it has not already been submitted. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Student_8h}{Student.\+h}}\item 
+src/\mbox{\hyperlink{Student_8cpp}{Student.\+cpp}}\end{DoxyCompactItemize}

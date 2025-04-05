@@ -1,0 +1,745 @@
+\doxysection{Exam Class Reference}
+\hypertarget{classExam}{}\label{classExam}\index{Exam@{Exam}}
+
+
+{\ttfamily \#include $<$Exam.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classExam_aa22722099f4a231542bacea74dae6860}{Exam}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{classExam}{Exam} object with default values. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classExam_aac863738609108c2aa0bba92228e40ad}{load\+From\+File}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Loads exam data from the specified file path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_ab258f61d603d5bebf0665ed5dc3ae6ab}{add\+Proctor}} (const \mbox{\hyperlink{classProctor}{Proctor}} \&p)
+\begin{DoxyCompactList}\small\item\em Adds a proctor to the exam session. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a0ab761c80c24565235ca7adb13ba608c}{add\+Student}} (const \mbox{\hyperlink{classStudent}{Student}} \&s)
+\begin{DoxyCompactList}\small\item\em Adds a student to the exam session. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a81cb808386b029c72b7f5b69fb330d15}{set\+Exam\+Data\+URL}} (const std\+::string \&url)
+\begin{DoxyCompactList}\small\item\em Sets the URL for exam data resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a1815e2968097faea46391b7ef29a0a96}{initialize\+Seat\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the seat map for student seating assignments. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classExam_a0805390ddc17a3515db91c72cb66842e}{has\+Student}} (int id)
+\begin{DoxyCompactList}\small\item\em Checks if a student with the specified ID exists in the exam session. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classExam_a8b9ffef5af1dc92595d6752e1a7fb329}{has\+Proctor}} (int id)
+\begin{DoxyCompactList}\small\item\em Checks if a proctor with the specified ID exists in the exam session. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classExam_a7b9e9409ee45f5a5095eff98486e4080}{load\+Data}} (const std\+::string \&data\+Path)
+\begin{DoxyCompactList}\small\item\em load an \doxylink{classExam}{Exam} object and read from the input file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classExam_a692dc43d8a823020af39fe555a37b0dc}{get\+Term\+Num}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the term number of the exam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a7abe16c896add1d6fee3504521e50fdf}{set\+Term\+Num}} (int term\+Num)
+\begin{DoxyCompactList}\small\item\em Sets the term number of the exam. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classExam_a599a2cce074bd9005010e83acba11df3}{get\+Term\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the term name of the exam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a9f5640ffc42312b3a0aed83e172bbb82}{set\+Term\+Name}} (const std\+::string \&term\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the term name of the exam. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classExam_a230c437f9dee66d1d21d0eb0b2b80705}{get\+Course\+Num}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the course number of the exam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a2b3335d2e7b6366bbb15903c0cc95c2c}{set\+Course\+Num}} (std\+::string course\+Num)
+\begin{DoxyCompactList}\small\item\em Sets the course number of the exam. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classExam_a02b49fdcb288268c7e3e5bb8d2a8cdd5}{get\+Rm\+Num}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the room number of the exam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a99a9cf3f9d6bf43d8204020361e1a4d0}{set\+Rm\+Num}} (const std\+::string \&rm\+Num)
+\begin{DoxyCompactList}\small\item\em Sets the room number of the exam. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classExam_a73fd17b4c901b4cd9bf2363ffb23171a}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the exam room\textquotesingle{}s capacity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a8e74ed0ef703985ebef0dfca1342d475}{set\+Capacity}} (int capacity)
+\begin{DoxyCompactList}\small\item\em Sets the exam room\textquotesingle{}s capacity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classExam_ad47277def36f672ccfa74d4789ee9b07}{get\+Max\+Row}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the max number of row of the exam room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a4826e028fd6011ae37cfd7525d7fb5dc}{set\+Max\+Row}} (int row)
+\begin{DoxyCompactList}\small\item\em Sets the max number of row of the exam room. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classExam_ab9aaefeda602d3c04d311aa33820639d}{get\+Max\+Col}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the max number of column of the exam room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a74fe53598d4b3fe173e6268395a02c87}{set\+Max\+Col}} (int col)
+\begin{DoxyCompactList}\small\item\em Sets the max number of column of the exam room. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classExam_ac5caf6db93f449fba8f6864eb62528c3}{get\+Num\+Versions}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the number of exam versions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_ab1fb663879e0f015988d968d10422dba}{set\+Num\+Versions}} (int num)
+\begin{DoxyCompactList}\small\item\em Sets the number of exam versions. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classExam_ac3a36a24e43a2a7cb3578703cb972a9d}{get\+Versions\+Code}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all the exam version codes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a30a270b5797e26b7d8c78158b019c463}{set\+Versions\+Code}} (std\+::vector$<$ int $>$ codes)
+\begin{DoxyCompactList}\small\item\em Sets the exam version codes. \end{DoxyCompactList}\item 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{classExam_ab3d11641bb186dc2d93f456636d9b038}{get\+Start\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the formatted start time of the exam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a8c63129a5d8a4ba517f8b7792411a314}{set\+Start\+Time}} (const std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \&start\+Time)
+\begin{DoxyCompactList}\small\item\em Sets the formatted start time of the exam. \end{DoxyCompactList}\item 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{classExam_a76ddac7d60f257efe995cab4eb11a5e3}{get\+End\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the formatted end time of the exam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a25c2291d1b7d6a34e0bfd193d19fa890}{set\+End\+Time}} (const std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \&end\+Time)
+\begin{DoxyCompactList}\small\item\em Sets the formatted end time of the exam. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \& \mbox{\hyperlink{classExam_ad66e35d40b9967afea0c695b86da4781}{get\+Students}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all the students attending the exam. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classProctor}{Proctor}} $>$ \& \mbox{\hyperlink{classExam_a891ab6fa3122ec201b8c735deab107a3}{get\+Proctors}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all the proctors of the exam. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classExam_a16ae93e9e4e012f5e51686ac6c4ae3fd}{get\+Total\+Present}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the real number of students showed up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_aea7455b0d5bdfa0486e3f95aad912f31}{set\+Total\+Present}} (int total\+Present)
+\begin{DoxyCompactList}\small\item\em Sets the real number of students showed up. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classExam_a42bee756202fa7a52434f263cffa140f}{get\+Incident\+Report}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves every incident report during the exam. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classExam_a664b14ab35d3bdb89c082220f4f82c7a}{get\+Report\+URL}} () const
+\begin{DoxyCompactList}\small\item\em Gets the URL of the exam report. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStudent}{Student}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classExam_a7b640be1fae4eb5cb6931c25db9ed278}{get\+Student\+By\+ID}} (int student\+ID)
+\begin{DoxyCompactList}\small\item\em Retrieves a pointer to a student by their ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStudent}{Student}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classExam_a0ec8ded2547b445abe8d2a065586f9c4}{check\+In}} (int student\+ID)
+\begin{DoxyCompactList}\small\item\em Checking in Students. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classExam_ae1529784b6b8358045f0c69b58df896f}{washroom\+Break}} (int student\+ID)
+\begin{DoxyCompactList}\small\item\em Adding washroom break to student. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classExam_a72741fe1cac90a4c4840b2a73689d91b}{early\+Submission}} (int student\+ID)
+\begin{DoxyCompactList}\small\item\em Submit a student\textquotesingle{}s exam early. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_a8abf396a89a56fd0a1a082f1f942fdcc}{end\+Of\+Time\+Submission}} ()
+\begin{DoxyCompactList}\small\item\em Submit all remaining students\textquotesingle{} exam when the time ends. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classExam_aa013480a5c14ce9a088e393eca630767}{generate\+Report}} (const std\+::string \&file\+Name)
+\item 
+void \mbox{\hyperlink{classExam_ac85829a99babf173487f7c630ebcabdc}{write\+Incident}} (int student\+ID, int proctor\+ID, const std\+::string \&incident\+Msg)
+\begin{DoxyCompactList}\small\item\em Log in an academic incident that happens during the exam. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classExam_aa22722099f4a231542bacea74dae6860}\label{classExam_aa22722099f4a231542bacea74dae6860} 
+\index{Exam@{Exam}!Exam@{Exam}}
+\index{Exam@{Exam}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{Exam()}{Exam()}}
+{\footnotesize\ttfamily Exam\+::\+Exam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{classExam}{Exam} object with default values. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classExam_ab258f61d603d5bebf0665ed5dc3ae6ab}\label{classExam_ab258f61d603d5bebf0665ed5dc3ae6ab} 
+\index{Exam@{Exam}!addProctor@{addProctor}}
+\index{addProctor@{addProctor}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{addProctor()}{addProctor()}}
+{\footnotesize\ttfamily void Exam\+::add\+Proctor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classProctor}{Proctor}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Adds a proctor to the exam session. 
+
+\begin{DoxyAuthor}{Author}
+Allen Pan
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The \doxylink{classProctor}{Proctor} object to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a0ab761c80c24565235ca7adb13ba608c}\label{classExam_a0ab761c80c24565235ca7adb13ba608c} 
+\index{Exam@{Exam}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{addStudent()}{addStudent()}}
+{\footnotesize\ttfamily void Exam\+::add\+Student (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStudent}{Student}} \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Adds a student to the exam session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The \doxylink{classStudent}{Student} object to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a0ec8ded2547b445abe8d2a065586f9c4}\label{classExam_a0ec8ded2547b445abe8d2a065586f9c4} 
+\index{Exam@{Exam}!checkIn@{checkIn}}
+\index{checkIn@{checkIn}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{checkIn()}{checkIn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} \texorpdfstring{$\ast$}{*} Exam\+::check\+In (\begin{DoxyParamCaption}\item[{int}]{student\+ID }\end{DoxyParamCaption})}
+
+
+
+Checking in Students. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student\+ID} & The student to check in. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a72741fe1cac90a4c4840b2a73689d91b}\label{classExam_a72741fe1cac90a4c4840b2a73689d91b} 
+\index{Exam@{Exam}!earlySubmission@{earlySubmission}}
+\index{earlySubmission@{earlySubmission}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{earlySubmission()}{earlySubmission()}}
+{\footnotesize\ttfamily bool Exam\+::early\+Submission (\begin{DoxyParamCaption}\item[{int}]{student\+ID }\end{DoxyParamCaption})}
+
+
+
+Submit a student\textquotesingle{}s exam early. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student\+ID} & The student submitting their exam early. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if submission is recorded. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a8abf396a89a56fd0a1a082f1f942fdcc}\label{classExam_a8abf396a89a56fd0a1a082f1f942fdcc} 
+\index{Exam@{Exam}!endOfTimeSubmission@{endOfTimeSubmission}}
+\index{endOfTimeSubmission@{endOfTimeSubmission}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{endOfTimeSubmission()}{endOfTimeSubmission()}}
+{\footnotesize\ttfamily void Exam\+::end\+Of\+Time\+Submission (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submit all remaining students\textquotesingle{} exam when the time ends. 
+
+\Hypertarget{classExam_aa013480a5c14ce9a088e393eca630767}\label{classExam_aa013480a5c14ce9a088e393eca630767} 
+\index{Exam@{Exam}!generateReport@{generateReport}}
+\index{generateReport@{generateReport}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{generateReport()}{generateReport()}}
+{\footnotesize\ttfamily void Exam\+::generate\+Report (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+\Hypertarget{classExam_a73fd17b4c901b4cd9bf2363ffb23171a}\label{classExam_a73fd17b4c901b4cd9bf2363ffb23171a} 
+\index{Exam@{Exam}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Exam\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the exam room\textquotesingle{}s capacity. 
+
+\begin{DoxyReturn}{Returns}
+The capacity as an int. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a230c437f9dee66d1d21d0eb0b2b80705}\label{classExam_a230c437f9dee66d1d21d0eb0b2b80705} 
+\index{Exam@{Exam}!getCourseNum@{getCourseNum}}
+\index{getCourseNum@{getCourseNum}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getCourseNum()}{getCourseNum()}}
+{\footnotesize\ttfamily std\+::string Exam\+::get\+Course\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the course number of the exam. 
+
+\begin{DoxyReturn}{Returns}
+The course number as an int. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a76ddac7d60f257efe995cab4eb11a5e3}\label{classExam_a76ddac7d60f257efe995cab4eb11a5e3} 
+\index{Exam@{Exam}!getEndTime@{getEndTime}}
+\index{getEndTime@{getEndTime}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getEndTime()}{getEndTime()}}
+{\footnotesize\ttfamily std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point Exam\+::get\+End\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the formatted end time of the exam. 
+
+\begin{DoxyReturn}{Returns}
+The end time as a system\+\_\+clock\+::timepoint. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a42bee756202fa7a52434f263cffa140f}\label{classExam_a42bee756202fa7a52434f263cffa140f} 
+\index{Exam@{Exam}!getIncidentReport@{getIncidentReport}}
+\index{getIncidentReport@{getIncidentReport}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getIncidentReport()}{getIncidentReport()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Exam\+::get\+Incident\+Report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves every incident report during the exam. 
+
+\begin{DoxyReturn}{Returns}
+The incident report as a vector of string. 
+\end{DoxyReturn}
+\Hypertarget{classExam_ab9aaefeda602d3c04d311aa33820639d}\label{classExam_ab9aaefeda602d3c04d311aa33820639d} 
+\index{Exam@{Exam}!getMaxCol@{getMaxCol}}
+\index{getMaxCol@{getMaxCol}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getMaxCol()}{getMaxCol()}}
+{\footnotesize\ttfamily int Exam\+::get\+Max\+Col (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the max number of column of the exam room. 
+
+\begin{DoxyReturn}{Returns}
+The max number of column as an int. 
+\end{DoxyReturn}
+\Hypertarget{classExam_ad47277def36f672ccfa74d4789ee9b07}\label{classExam_ad47277def36f672ccfa74d4789ee9b07} 
+\index{Exam@{Exam}!getMaxRow@{getMaxRow}}
+\index{getMaxRow@{getMaxRow}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getMaxRow()}{getMaxRow()}}
+{\footnotesize\ttfamily int Exam\+::get\+Max\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the max number of row of the exam room. 
+
+\begin{DoxyReturn}{Returns}
+The max number of row as an int. 
+\end{DoxyReturn}
+\Hypertarget{classExam_ac5caf6db93f449fba8f6864eb62528c3}\label{classExam_ac5caf6db93f449fba8f6864eb62528c3} 
+\index{Exam@{Exam}!getNumVersions@{getNumVersions}}
+\index{getNumVersions@{getNumVersions}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getNumVersions()}{getNumVersions()}}
+{\footnotesize\ttfamily int Exam\+::get\+Num\+Versions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the number of exam versions. 
+
+\begin{DoxyReturn}{Returns}
+The number of exam versions as an int. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a891ab6fa3122ec201b8c735deab107a3}\label{classExam_a891ab6fa3122ec201b8c735deab107a3} 
+\index{Exam@{Exam}!getProctors@{getProctors}}
+\index{getProctors@{getProctors}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getProctors()}{getProctors()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classProctor}{Proctor}} $>$ \& Exam\+::get\+Proctors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves all the proctors of the exam. 
+
+\begin{DoxyReturn}{Returns}
+All the proctors as a vector of Proctors. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a664b14ab35d3bdb89c082220f4f82c7a}\label{classExam_a664b14ab35d3bdb89c082220f4f82c7a} 
+\index{Exam@{Exam}!getReportURL@{getReportURL}}
+\index{getReportURL@{getReportURL}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getReportURL()}{getReportURL()}}
+{\footnotesize\ttfamily std\+::string Exam\+::get\+Report\+URL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the URL of the exam report. 
+
+\begin{DoxyAuthor}{Author}
+Allen Pan
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+A string containing the URL where the exam report is stored. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a02b49fdcb288268c7e3e5bb8d2a8cdd5}\label{classExam_a02b49fdcb288268c7e3e5bb8d2a8cdd5} 
+\index{Exam@{Exam}!getRmNum@{getRmNum}}
+\index{getRmNum@{getRmNum}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getRmNum()}{getRmNum()}}
+{\footnotesize\ttfamily std\+::string Exam\+::get\+Rm\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the room number of the exam. 
+
+\begin{DoxyReturn}{Returns}
+The room number as a string. 
+\end{DoxyReturn}
+\Hypertarget{classExam_ab3d11641bb186dc2d93f456636d9b038}\label{classExam_ab3d11641bb186dc2d93f456636d9b038} 
+\index{Exam@{Exam}!getStartTime@{getStartTime}}
+\index{getStartTime@{getStartTime}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getStartTime()}{getStartTime()}}
+{\footnotesize\ttfamily std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point Exam\+::get\+Start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the formatted start time of the exam. 
+
+\begin{DoxyReturn}{Returns}
+The start time as a system\+\_\+clock\+::timepoint. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a7b640be1fae4eb5cb6931c25db9ed278}\label{classExam_a7b640be1fae4eb5cb6931c25db9ed278} 
+\index{Exam@{Exam}!getStudentByID@{getStudentByID}}
+\index{getStudentByID@{getStudentByID}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getStudentByID()}{getStudentByID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStudent}{Student}} \texorpdfstring{$\ast$}{*} Exam\+::get\+Student\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{student\+ID }\end{DoxyParamCaption})}
+
+
+
+Retrieves a pointer to a student by their ID. 
+
+\begin{DoxyAuthor}{Author}
+Allen Pan
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em student\+ID} & The ID of the student to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \doxylink{classStudent}{Student} object if found, otherwise nullptr. 
+\end{DoxyReturn}
+\Hypertarget{classExam_ad66e35d40b9967afea0c695b86da4781}\label{classExam_ad66e35d40b9967afea0c695b86da4781} 
+\index{Exam@{Exam}!getStudents@{getStudents}}
+\index{getStudents@{getStudents}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getStudents()}{getStudents()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classStudent}{Student}} $>$ \& Exam\+::get\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves all the students attending the exam. 
+
+\begin{DoxyReturn}{Returns}
+All the students as a vector of Students. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a599a2cce074bd9005010e83acba11df3}\label{classExam_a599a2cce074bd9005010e83acba11df3} 
+\index{Exam@{Exam}!getTermName@{getTermName}}
+\index{getTermName@{getTermName}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getTermName()}{getTermName()}}
+{\footnotesize\ttfamily std\+::string Exam\+::get\+Term\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the term name of the exam. 
+
+\begin{DoxyReturn}{Returns}
+The term name as a string. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a692dc43d8a823020af39fe555a37b0dc}\label{classExam_a692dc43d8a823020af39fe555a37b0dc} 
+\index{Exam@{Exam}!getTermNum@{getTermNum}}
+\index{getTermNum@{getTermNum}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getTermNum()}{getTermNum()}}
+{\footnotesize\ttfamily int Exam\+::get\+Term\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the term number of the exam. 
+
+\begin{DoxyReturn}{Returns}
+The term number as an int. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a16ae93e9e4e012f5e51686ac6c4ae3fd}\label{classExam_a16ae93e9e4e012f5e51686ac6c4ae3fd} 
+\index{Exam@{Exam}!getTotalPresent@{getTotalPresent}}
+\index{getTotalPresent@{getTotalPresent}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getTotalPresent()}{getTotalPresent()}}
+{\footnotesize\ttfamily int Exam\+::get\+Total\+Present (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the real number of students showed up. 
+
+\begin{DoxyReturn}{Returns}
+The number of attended students as an int. 
+\end{DoxyReturn}
+\Hypertarget{classExam_ac3a36a24e43a2a7cb3578703cb972a9d}\label{classExam_ac3a36a24e43a2a7cb3578703cb972a9d} 
+\index{Exam@{Exam}!getVersionsCode@{getVersionsCode}}
+\index{getVersionsCode@{getVersionsCode}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{getVersionsCode()}{getVersionsCode()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Exam\+::get\+Versions\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves all the exam version codes. 
+
+\begin{DoxyReturn}{Returns}
+All the exam version as a vector of int. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a8b9ffef5af1dc92595d6752e1a7fb329}\label{classExam_a8b9ffef5af1dc92595d6752e1a7fb329} 
+\index{Exam@{Exam}!hasProctor@{hasProctor}}
+\index{hasProctor@{hasProctor}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{hasProctor()}{hasProctor()}}
+{\footnotesize\ttfamily bool Exam\+::has\+Proctor (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Checks if a proctor with the specified ID exists in the exam session. 
+
+\begin{DoxyAuthor}{Author}
+Allen Pan
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The proctor ID to look for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the proctor is found, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a0805390ddc17a3515db91c72cb66842e}\label{classExam_a0805390ddc17a3515db91c72cb66842e} 
+\index{Exam@{Exam}!hasStudent@{hasStudent}}
+\index{hasStudent@{hasStudent}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{hasStudent()}{hasStudent()}}
+{\footnotesize\ttfamily bool Exam\+::has\+Student (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Checks if a student with the specified ID exists in the exam session. 
+
+\begin{DoxyAuthor}{Author}
+Allen Pan
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The student ID to look for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the student is found, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a1815e2968097faea46391b7ef29a0a96}\label{classExam_a1815e2968097faea46391b7ef29a0a96} 
+\index{Exam@{Exam}!initializeSeatMap@{initializeSeatMap}}
+\index{initializeSeatMap@{initializeSeatMap}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{initializeSeatMap()}{initializeSeatMap()}}
+{\footnotesize\ttfamily void Exam\+::initialize\+Seat\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the seat map for student seating assignments. 
+
+This function sets up the seating layout according to the exam configuration. \Hypertarget{classExam_a7b9e9409ee45f5a5095eff98486e4080}\label{classExam_a7b9e9409ee45f5a5095eff98486e4080} 
+\index{Exam@{Exam}!loadData@{loadData}}
+\index{loadData@{loadData}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{loadData()}{loadData()}}
+{\footnotesize\ttfamily bool Exam\+::load\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data\+Path }\end{DoxyParamCaption})}
+
+
+
+load an \doxylink{classExam}{Exam} object and read from the input file. 
+
+The loader reads from exam\+Data.\+txt for term number, term name, course number, lists of Students and Instructors, etc. \Hypertarget{classExam_aac863738609108c2aa0bba92228e40ad}\label{classExam_aac863738609108c2aa0bba92228e40ad} 
+\index{Exam@{Exam}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily bool Exam\+::load\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Loads exam data from the specified file path. 
+
+\begin{DoxyAuthor}{Author}
+Allen Pan
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path to load the exam data from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if loading is successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classExam_a8e74ed0ef703985ebef0dfca1342d475}\label{classExam_a8e74ed0ef703985ebef0dfca1342d475} 
+\index{Exam@{Exam}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily void Exam\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Sets the exam room\textquotesingle{}s capacity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & The room\textquotesingle{}s capacity to assign to the exam. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a2b3335d2e7b6366bbb15903c0cc95c2c}\label{classExam_a2b3335d2e7b6366bbb15903c0cc95c2c} 
+\index{Exam@{Exam}!setCourseNum@{setCourseNum}}
+\index{setCourseNum@{setCourseNum}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setCourseNum()}{setCourseNum()}}
+{\footnotesize\ttfamily void Exam\+::set\+Course\+Num (\begin{DoxyParamCaption}\item[{std\+::string}]{course\+Num }\end{DoxyParamCaption})}
+
+
+
+Sets the course number of the exam. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em course\+Num} & The course number to assign to the exam. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a25c2291d1b7d6a34e0bfd193d19fa890}\label{classExam_a25c2291d1b7d6a34e0bfd193d19fa890} 
+\index{Exam@{Exam}!setEndTime@{setEndTime}}
+\index{setEndTime@{setEndTime}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setEndTime()}{setEndTime()}}
+{\footnotesize\ttfamily void Exam\+::set\+End\+Time (\begin{DoxyParamCaption}\item[{const std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \&}]{end\+Time }\end{DoxyParamCaption})}
+
+
+
+Sets the formatted end time of the exam. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em end\+Time} & The end time of the exam. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a81cb808386b029c72b7f5b69fb330d15}\label{classExam_a81cb808386b029c72b7f5b69fb330d15} 
+\index{Exam@{Exam}!setExamDataURL@{setExamDataURL}}
+\index{setExamDataURL@{setExamDataURL}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setExamDataURL()}{setExamDataURL()}}
+{\footnotesize\ttfamily void Exam\+::set\+Exam\+Data\+URL (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{url }\end{DoxyParamCaption})}
+
+
+
+Sets the URL for exam data resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The string representing the URL. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a74fe53598d4b3fe173e6268395a02c87}\label{classExam_a74fe53598d4b3fe173e6268395a02c87} 
+\index{Exam@{Exam}!setMaxCol@{setMaxCol}}
+\index{setMaxCol@{setMaxCol}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setMaxCol()}{setMaxCol()}}
+{\footnotesize\ttfamily void Exam\+::set\+Max\+Col (\begin{DoxyParamCaption}\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Sets the max number of column of the exam room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & The number of column the exam room. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a4826e028fd6011ae37cfd7525d7fb5dc}\label{classExam_a4826e028fd6011ae37cfd7525d7fb5dc} 
+\index{Exam@{Exam}!setMaxRow@{setMaxRow}}
+\index{setMaxRow@{setMaxRow}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setMaxRow()}{setMaxRow()}}
+{\footnotesize\ttfamily void Exam\+::set\+Max\+Row (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+
+
+Sets the max number of row of the exam room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The number of row the exam room. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_ab1fb663879e0f015988d968d10422dba}\label{classExam_ab1fb663879e0f015988d968d10422dba} 
+\index{Exam@{Exam}!setNumVersions@{setNumVersions}}
+\index{setNumVersions@{setNumVersions}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setNumVersions()}{setNumVersions()}}
+{\footnotesize\ttfamily void Exam\+::set\+Num\+Versions (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Sets the number of exam versions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Number of exam versions. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a99a9cf3f9d6bf43d8204020361e1a4d0}\label{classExam_a99a9cf3f9d6bf43d8204020361e1a4d0} 
+\index{Exam@{Exam}!setRmNum@{setRmNum}}
+\index{setRmNum@{setRmNum}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setRmNum()}{setRmNum()}}
+{\footnotesize\ttfamily void Exam\+::set\+Rm\+Num (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{rm\+Num }\end{DoxyParamCaption})}
+
+
+
+Sets the room number of the exam. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rm\+Num} & The room number to assign to the exam. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a8c63129a5d8a4ba517f8b7792411a314}\label{classExam_a8c63129a5d8a4ba517f8b7792411a314} 
+\index{Exam@{Exam}!setStartTime@{setStartTime}}
+\index{setStartTime@{setStartTime}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setStartTime()}{setStartTime()}}
+{\footnotesize\ttfamily void Exam\+::set\+Start\+Time (\begin{DoxyParamCaption}\item[{const std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \&}]{start\+Time }\end{DoxyParamCaption})}
+
+
+
+Sets the formatted start time of the exam. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Time} & The start time of the exam. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a9f5640ffc42312b3a0aed83e172bbb82}\label{classExam_a9f5640ffc42312b3a0aed83e172bbb82} 
+\index{Exam@{Exam}!setTermName@{setTermName}}
+\index{setTermName@{setTermName}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setTermName()}{setTermName()}}
+{\footnotesize\ttfamily void Exam\+::set\+Term\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{term\+Name }\end{DoxyParamCaption})}
+
+
+
+Sets the term name of the exam. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term\+Name} & The term name to assign to the exam. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a7abe16c896add1d6fee3504521e50fdf}\label{classExam_a7abe16c896add1d6fee3504521e50fdf} 
+\index{Exam@{Exam}!setTermNum@{setTermNum}}
+\index{setTermNum@{setTermNum}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setTermNum()}{setTermNum()}}
+{\footnotesize\ttfamily void Exam\+::set\+Term\+Num (\begin{DoxyParamCaption}\item[{int}]{term\+Num }\end{DoxyParamCaption})}
+
+
+
+Sets the term number of the exam. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em term\+Num} & The term number to assign to the exam. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_aea7455b0d5bdfa0486e3f95aad912f31}\label{classExam_aea7455b0d5bdfa0486e3f95aad912f31} 
+\index{Exam@{Exam}!setTotalPresent@{setTotalPresent}}
+\index{setTotalPresent@{setTotalPresent}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setTotalPresent()}{setTotalPresent()}}
+{\footnotesize\ttfamily void Exam\+::set\+Total\+Present (\begin{DoxyParamCaption}\item[{int}]{total\+Present }\end{DoxyParamCaption})}
+
+
+
+Sets the real number of students showed up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+Present} & The number of attended students. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_a30a270b5797e26b7d8c78158b019c463}\label{classExam_a30a270b5797e26b7d8c78158b019c463} 
+\index{Exam@{Exam}!setVersionsCode@{setVersionsCode}}
+\index{setVersionsCode@{setVersionsCode}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{setVersionsCode()}{setVersionsCode()}}
+{\footnotesize\ttfamily void Exam\+::set\+Versions\+Code (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{codes }\end{DoxyParamCaption})}
+
+
+
+Sets the exam version codes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codes} & The code to assign to an exam version. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_ae1529784b6b8358045f0c69b58df896f}\label{classExam_ae1529784b6b8358045f0c69b58df896f} 
+\index{Exam@{Exam}!washroomBreak@{washroomBreak}}
+\index{washroomBreak@{washroomBreak}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{washroomBreak()}{washroomBreak()}}
+{\footnotesize\ttfamily std\+::string Exam\+::washroom\+Break (\begin{DoxyParamCaption}\item[{int}]{student\+ID }\end{DoxyParamCaption})}
+
+
+
+Adding washroom break to student. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student\+ID} & The student having a break. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classExam_ac85829a99babf173487f7c630ebcabdc}\label{classExam_ac85829a99babf173487f7c630ebcabdc} 
+\index{Exam@{Exam}!writeIncident@{writeIncident}}
+\index{writeIncident@{writeIncident}!Exam@{Exam}}
+\doxysubsubsection{\texorpdfstring{writeIncident()}{writeIncident()}}
+{\footnotesize\ttfamily void Exam\+::write\+Incident (\begin{DoxyParamCaption}\item[{int}]{student\+ID,  }\item[{int}]{proctor\+ID,  }\item[{const std\+::string \&}]{incident\+Msg }\end{DoxyParamCaption})}
+
+
+
+Log in an academic incident that happens during the exam. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em student\+ID} & The student that is involved in the incident \\
+\hline
+{\em proctor\+ID} & The proctor that reports the incident \\
+\hline
+{\em incident\+Msg} & Report of the incident \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Exam_8h}{Exam.\+h}}\item 
+src/\mbox{\hyperlink{Exam_8cpp}{Exam.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,97 @@
+\doxysection{Main\+Window Class Reference}
+\hypertarget{classMainWindow}{}\label{classMainWindow}\index{MainWindow@{MainWindow}}
+
+
+The main window of the University Examination Identity Verification System.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+% FIG 0
+
+
+Collaboration diagram for Main\+Window\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMainWindow_a4d01f84e8749da5543c1f504fa98b45f}{Main\+Window}} (\mbox{\hyperlink{classExam}{Exam}} \texorpdfstring{$\ast$}{*}exam, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classMainWindow}{Main\+Window} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{\texorpdfstring{$\sim$}{\string~}\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classMainWindow}{Main\+Window}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a6897e94292658f13099352f3b3cb2d7e}{populate\+Exam\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Populates the UI with current exam details (e.\+g., course, time, room). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main window of the University Examination Identity Verification System. 
+
+This class represents the initial page of the application, including\+:
+\begin{DoxyItemize}
+\item A login screen for TAs or instructors to authenticate using credentials.
+\item A dashboard that displays exam details and offers access to various exam-\/related operations. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMainWindow_a4d01f84e8749da5543c1f504fa98b45f}\label{classMainWindow_a4d01f84e8749da5543c1f504fa98b45f} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classExam}{Exam}} \texorpdfstring{$\ast$}{*}}]{exam,  }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{classMainWindow}{Main\+Window} object. 
+
+Constructor for \doxylink{classMainWindow}{Main\+Window}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em exam} & Pointer to the \doxylink{classExam}{Exam} object containing current exam session data. \\
+\hline
+{\em parent} & Optional parent widget.\\
+\hline
+\end{DoxyParams}
+Initializes the UI and sets the initial view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em exam} & Pointer to the active \doxylink{classExam}{Exam} object containing exam session data. \\
+\hline
+{\em parent} & Parent widget, default is nullptr. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{\texorpdfstring{$\sim$}{\string~}MainWindow}}
+\index{````~MainWindow@{\texorpdfstring{$\sim$}{\string~}MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MainWindow()}{\string~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{classMainWindow}{Main\+Window}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMainWindow_a6897e94292658f13099352f3b3cb2d7e}\label{classMainWindow_a6897e94292658f13099352f3b3cb2d7e} 
+\index{MainWindow@{MainWindow}!populateExamDetails@{populateExamDetails}}
+\index{populateExamDetails@{populateExamDetails}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{populateExamDetails()}{populateExamDetails()}}
+{\footnotesize\ttfamily void Main\+Window\+::populate\+Exam\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Populates the UI with current exam details (e.\+g., course, time, room). 
+
+Populates the exam detail labels with values from the \doxylink{classExam}{Exam} object. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/ui\+\_\+header/\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+src/ui\+\_\+src/\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

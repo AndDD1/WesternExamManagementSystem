@@ -1,0 +1,28 @@
+1229        ;; Term number
+Winter 25   ;; Term name
+COMPSCI 3307        ;; Course number
+AH-STAGE    ;; Exam Rm
+200         ;; Max seat
+10          ;; Rows
+20          ;; Colum 
+4           ;; number of versions
+111,222,333,444    ;; code of versions
+2025-03-10T13:30:00      ;; Start time
+2025-04-10T16:30:00      ;; End time
+Proctor    ;; List of Proctor
+251285900, Alan Shepard, 1980-02-15, https://somedomain.com/images/251285900.jpg, Instructor
+251285901, Matt Davison, 1985-07-21, https://somedomain.com/images/251285901.jpg, Assistant
+Student    ;; List of Student
+251285850, Mark Daley, 2002-06-01, /home/panyilun/CS3307/IDEConfigs/pics/251285850.jpg
+251285851, Emilie Rivers, 2003-06-21, /home/panyilun/CS3307/IDEConfigs/pics/251285851.jpg
+251285852, Michael Domaratzki, 2002-05-01, /home/panyilun/CS3307/IDEConfigs/pics/251285852.jpg
+251285853, Mahmoud El-Sakka, 2001-11-01, /home/panyilun/CS3307/IDEConfigs/pics/251285853.jpg
+251285854, Anwar Haque, 2005-11-21, /home/panyilun/CS3307/IDEConfigs/pics/251285854.jpg
+251285855, Lucian Ilie, 2002-12-21, /home/panyilun/CS3307/IDEConfigs/pics/251285855.jpg
+251285856, Marc Moreno Maza, 2001-05-21, /home/panyilun/CS3307/IDEConfigs/pics/251285856.jpg
+251285857, Laura Reid, 2001-05-31, /home/panyilun/CS3307/IDEConfigs/pics/251285857.jpg
+251285858, Bryan Sarlo, 2001-04-25, /home/panyilun/CS3307/IDEConfigs/pics/251285858.jpg
+251285859, Roberto Solis-Oba, 2002-04-25, /home/panyilun/CS3307/IDEConfigs/pics/251285859.jpg
+251285860, Leigh MacDonald, 2002-09-25, /home/panyilun/CS3307/IDEConfigs/pics/251285860.jpg
+251285861, Kaizhong Zhang, 2003-07-15, /home/panyilun/CS3307/IDEConfigs/pics/251285861.jpg
+251285862, Tai-Yeong Chung, 2003-07-15, /home/panyilun/CS3307/IDEConfigs/pics/251285862.jpg

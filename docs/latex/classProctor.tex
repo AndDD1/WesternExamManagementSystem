@@ -1,0 +1,109 @@
+\doxysection{Proctor Class Reference}
+\hypertarget{classProctor}{}\label{classProctor}\index{Proctor@{Proctor}}
+
+
+{\ttfamily \#include $<$Proctor.\+h$>$}
+
+
+
+Inheritance diagram for Proctor\+:
+% FIG 0
+
+
+Collaboration diagram for Proctor\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProctor_a8156d3bd2426973fa3ac5bb4024ab068}{Proctor}} (int ID, const std\+::string \&name, const std\+::string \&DOB, const std\+::string \&pic\+\_\+\+URL, const std\+::string \&role)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classProctor}{Proctor} object with the specified attributes. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classProctor_a237883e9f937d67f1193d463b93c3141}{get\+Role}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the role of the proctor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProctor_a799baff4113a1acb90eea169123f4c85}{set\+Role}} (const std\+::string \&role)
+\begin{DoxyCompactList}\small\item\em Sets the role of the proctor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classUser}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUser_afc52455f5d70b69df489d0f3f1f43a6c}{User}} (int ID, const std\+::string \&name, const std\+::string \&DOB, const std\+::string \&pic\+\_\+\+URL)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classUser}{User} object with the specified attributes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classUser_a986c6f30aeac167bb5d311dd412cf604}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the user\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a95feef2641a3141ef514a0bd52c3aaa2}{set\+ID}} (int ID)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s ID. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUser_a446a64e63adafbc2e1428532275ad6a1}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_abe087f191699f9d61bdc94d041e4fada}{set\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUser_a82231a1d7a800dcffe2b50d5196ede10}{get\+DOB}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the user\textquotesingle{}s date of birth. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_acefa722d7234e30eb3bb11cae967ee5b}{set\+DOB}} (const std\+::string \&DOB)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s date of birth. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUser_a11d123ac49dd05211031447557ec7a42}{get\+Pic\+URL}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the user\textquotesingle{}s profile picture URL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUser_a6f8a5dc50521de73d57ca34631541de9}{set\+Pic\+URL}} (const std\+::string \&pic\+\_\+\+URL)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s profile picture URL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classProctor_a8156d3bd2426973fa3ac5bb4024ab068}\label{classProctor_a8156d3bd2426973fa3ac5bb4024ab068} 
+\index{Proctor@{Proctor}!Proctor@{Proctor}}
+\index{Proctor@{Proctor}!Proctor@{Proctor}}
+\doxysubsubsection{\texorpdfstring{Proctor()}{Proctor()}}
+{\footnotesize\ttfamily Proctor\+::\+Proctor (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{DOB,  }\item[{const std\+::string \&}]{pic\+\_\+\+URL,  }\item[{const std\+::string \&}]{role }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classProctor}{Proctor} object with the specified attributes. 
+
+This constructor initializes a \doxylink{classProctor}{Proctor} object by calling the base class \doxylink{classUser}{User} constructor and setting the role of the proctor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & The unique identifier of the proctor. \\
+\hline
+{\em name} & The name of the proctor. \\
+\hline
+{\em DOB} & The date of birth of the proctor. \\
+\hline
+{\em pic\+\_\+\+URL} & The URL of the proctor\textquotesingle{}s profile picture. \\
+\hline
+{\em role} & The role assigned to the proctor. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classProctor_a237883e9f937d67f1193d463b93c3141}\label{classProctor_a237883e9f937d67f1193d463b93c3141} 
+\index{Proctor@{Proctor}!getRole@{getRole}}
+\index{getRole@{getRole}!Proctor@{Proctor}}
+\doxysubsubsection{\texorpdfstring{getRole()}{getRole()}}
+{\footnotesize\ttfamily std\+::string Proctor\+::get\+Role (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the role of the proctor. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the role of the proctor. 
+\end{DoxyReturn}
+\Hypertarget{classProctor_a799baff4113a1acb90eea169123f4c85}\label{classProctor_a799baff4113a1acb90eea169123f4c85} 
+\index{Proctor@{Proctor}!setRole@{setRole}}
+\index{setRole@{setRole}!Proctor@{Proctor}}
+\doxysubsubsection{\texorpdfstring{setRole()}{setRole()}}
+{\footnotesize\ttfamily void Proctor\+::set\+Role (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{role }\end{DoxyParamCaption})}
+
+
+
+Sets the role of the proctor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em role} & The new role to be assigned to the proctor. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Proctor_8h}{Proctor.\+h}}\item 
+src/\mbox{\hyperlink{Proctor_8cpp}{Proctor.\+cpp}}\end{DoxyCompactItemize}

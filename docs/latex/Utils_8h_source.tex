@@ -1,0 +1,65 @@
+\doxysection{Utils.\+h}
+\hypertarget{Utils_8h_source}{}\label{Utils_8h_source}\index{include/Utils.h@{include/Utils.h}}
+\mbox{\hyperlink{Utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UTILS\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UTILS\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QDateTime>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{Utils_8h_ad0e15662de7af076789a3685545c7430}{timePointToString}}(\textcolor{keyword}{const}\ std::chrono::system\_clock::time\_point\&\ tp)\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ std::time\_t\ timeT\ =\ std::chrono::system\_clock::to\_time\_t(tp);}
+\DoxyCodeLine{00028\ \ \ \ \ std::tm\ tm\ =\ *std::localtime(\&timeT);\ \ \textcolor{comment}{//\ or\ std::gmtime\ for\ UTC}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ std::ostringstream\ oss;}
+\DoxyCodeLine{00031\ \ \ \ \ oss\ <<\ std::put\_time(\&tm,\ \textcolor{stringliteral}{"{}\%Y-\/\%m-\/\%d\ \%H:\%M:\%S"{}});\ \ \textcolor{comment}{//\ Format:\ YYYY-\/MM-\/DD\ HH:MM:SS}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{return}\ oss.str();}
+\DoxyCodeLine{00033\ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{Utils_8h_a8a62b91d0c62a9e80bf96f33fc02220c}{timePointToQString}}(\textcolor{keyword}{const}\ std::chrono::system\_clock::time\_point\&\ tp)\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ std::time\_t\ time\ =\ std::chrono::system\_clock::to\_time\_t(tp);}
+\DoxyCodeLine{00045\ \ \ \ \ QDateTime\ dateTime\ =\ QDateTime::fromSecsSinceEpoch(\textcolor{keyword}{static\_cast<}qint64\textcolor{keyword}{>}(time));}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{return}\ dateTime.toString(\textcolor{stringliteral}{"{}yyyy-\/MM-\/dd\ hh:mm:ss"{}});}
+\DoxyCodeLine{00047\ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{inline}\ std::chrono::system\_clock::time\_point\ \mbox{\hyperlink{Utils_8h_a30c120059f570dedd26178a620a8ac4e}{stringToTimePoint}}(\textcolor{keyword}{const}\ std::string\ \&isoString)\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ std::tm\ t\ =\ \{\};}
+\DoxyCodeLine{00061\ \ \ \ \ std::istringstream\ ss(isoString);}
+\DoxyCodeLine{00062\ \ \ \ \ ss\ >>\ std::get\_time(\&t,\ \textcolor{stringliteral}{"{}\%Y-\/\%m-\/\%dT\%H:\%M:\%S"{}});}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordflow}{if}\ (ss.fail())\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}Failed\ to\ parse\ time:\ "{}}\ +\ isoString);}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \ \ \ \ std::time\_t\ time\_c\ =\ std::mktime(\&t);}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordflow}{return}\ std::chrono::system\_clock::from\_time\_t(time\_c);}
+\DoxyCodeLine{00068\ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{Utils_8h_a1a32c4d3bd87256731e67936766c65ca}{trim}}(\textcolor{keyword}{const}\ std::string\ \&s)\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{auto}\ start\ =\ s.begin();}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{while}\ (start\ !=\ s.end()\ \&\&\ std::isspace(*start))}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ start++;}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{auto}\ end\ =\ s.end();}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ end-\/-\/;}
+\DoxyCodeLine{00078\ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (std::distance(start,\ end)\ >\ 0\ \&\&\ std::isspace(*end));}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{return}\ std::string(start,\ end\ +\ 1);}
+\DoxyCodeLine{00080\ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{comment}{//\ Helper\ function\ to\ extract\ the\ substring\ before\ "{};;"{},\ if\ present.}}
+\DoxyCodeLine{00083\ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{Utils_8h_a2c5f980546ab3ff3f2b93ddb7d1c6a5f}{getValue}}(\textcolor{keyword}{const}\ std::string\ \&line)\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ pos\ =\ line.find(\textcolor{stringliteral}{"{};;"{}});}
+\DoxyCodeLine{00085\ \ \ \ \ std::string\ value\ =\ (pos\ !=\ std::string::npos)\ ?\ line.substr(0,\ pos)\ :\ line;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{Utils_8h_a1a32c4d3bd87256731e67936766c65ca}{trim}}(value);}
+\DoxyCodeLine{00087\ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UTILS\_H}}
+\DoxyCodeLine{00090\ }
+
+\end{DoxyCode}

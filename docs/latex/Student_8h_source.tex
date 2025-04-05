@@ -1,0 +1,55 @@
+\doxysection{Student.\+h}
+\hypertarget{Student_8h_source}{}\label{Student_8h_source}\index{include/Student.h@{include/Student.h}}
+\mbox{\hyperlink{Student_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ STUDENT\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ STUDENT\_H}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{User_8h}{User.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Break_8h}{Break.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classStudent}{Student}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUser}{User}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ seatNum;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assigned\ seat\ number}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ examVersion;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Exam\ booklet\ version}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ isAttend;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Attendance\ status}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ isSubmit;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Exam\ submission\ status}}
+\DoxyCodeLine{00027\ \ \ \ \ std::vector<Break>\ breaks;\ \ \ \ \textcolor{comment}{//\ Record\ of\ student's\ breaks}}
+\DoxyCodeLine{00028\ \ \ \ \ std::chrono::system\_clock::time\_point\ submissionTime;\ \ \textcolor{comment}{//\ Student's\ submission\ time}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{classStudent}{Student}}(\textcolor{keywordtype}{int}\ ID,\ \textcolor{keyword}{const}\ std::string\ \&name,\ \textcolor{keyword}{const}\ std::string\ \&DOB,\ \textcolor{keyword}{const}\ std::string\ \&pic\_URL,\ \textcolor{keywordtype}{bool}\ isAttend\ =\ \textcolor{keyword}{false},\ \textcolor{keywordtype}{bool}\ isSubmit\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ std::string\ \mbox{\hyperlink{classStudent_a61845e58c3054b0bd09d554f2acf78c6}{getSeatNum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStudent_a9672f1788e8477b2014888000b4fbba2}{setSeatNum}}(\textcolor{keyword}{const}\ std::string\ \&seat);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classStudent_ab684f4da73e4f12cd13b3f59ce46f93d}{getExamVersion}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStudent_ab3d9f9b857cc60ef7cfcaecb3e5cad63}{setExamVersion}}(\textcolor{keywordtype}{int}\ version);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classStudent_a32d098f5871c78c5c26e5ba8c78fb872}{getAttendance}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStudent_aa9c9bf0da7802d4f493789983a59c9d2}{setAttendance}}(\textcolor{keywordtype}{bool}\ status);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStudent_aef9bb0f48898e480c4ba5fee2d5e2523}{leaveForBreak}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStudent_ad45a9a39934d282a2b00fd3bf3025407}{returnFromBreak}}();}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00111\ \ \ \ \ std::vector<Break>*\ \mbox{\hyperlink{classStudent_a1cb9b4b29f4a9f20755da62d25febc80}{getBreaksList}}();}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStudent_abb758db2fa40be23ce3e3ae72a097eee}{submitExam}}();}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classStudent_ab80ebd47c9c38190df98bf4d8d993649}{getSubmissionStatus}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \ \ \ \ std::string\ \mbox{\hyperlink{classStudent_a5f4817dd5e1c7323352f078e3a0c5610}{getSubmissionTime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00134\ \};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STUDENT\_H}}
+
+\end{DoxyCode}
