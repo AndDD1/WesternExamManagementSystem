@@ -1,4 +1,4 @@
-# University Examination Identity Verification System (Group 66)
+# University Examination Identity Verification Management System (Group 66)
 
 This project is a C++/Qt-based university examination management and identity verification system. It ensures exam integrity by combining student ONECard check-ins, facial recognition, attendance tracking, and real-time monitoring. The system is designed to be used on Raspberry Pi with database integration, a webcam, and card reader hardware.
 
