@@ -165,7 +165,7 @@ We would like to express our gratitude to:
 
 ---
 
-## Contributors (in no particular order)
+## Contributors
 
 - **Allen Pan**
 - **Andy Dai**
